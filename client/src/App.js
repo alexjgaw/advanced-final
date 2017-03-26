@@ -1,13 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import SignUpSignIn from './SignUpSignIn';
-import TopNavbar from './TopNavbar';
-import Secret from './Secret';
-import axios from 'axios';
+import TopNavbar from './components/TopNavbar/index';
+import Hero from './components/Hero/index';
+import Explainer from './components/Explainer/index';
+import DisplaySection from './components/DisplaySection/index';
 
-class App extends Component {
-
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <TopNavbar />
+        <Hero />
+        <Explainer />
+        <DisplaySection />
+      </div>
+    </BrowserRouter>
+  );
+};
 
 export default App;

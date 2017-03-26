@@ -1,0 +1,14 @@
+.App .Hero .img-responsive {
+  float: left;
+  max-height: 70vh;
+}
+
+.hero-row {
+  display: flex;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
