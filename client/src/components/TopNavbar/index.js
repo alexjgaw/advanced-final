@@ -1,13 +1,15 @@
 import React, { PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Logo from '../Logo/index';
+import './index.css';
 
 const TopNavbar = (props) => {
   return (
-    <Navbar inverse collapseOnSelect>
+    <Navbar inverse collapseOnSelect className="eff-that-nav">
       <Navbar.Header>
         <Navbar.Brand>
-          <Link to="/">Auth App</Link>
+          <Logo />
         </Navbar.Brand>
         { props.showNavItems ? <Navbar.Toggle /> : null }
       </Navbar.Header>

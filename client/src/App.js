@@ -5,6 +5,7 @@ import TopNavbar from './components/TopNavbar/index';
 import Hero from './components/Hero/index';
 import Explainer from './components/Explainer/index';
 import DisplaySection from './components/DisplaySection/index';
+import Footer from './components/Footer/index';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Hero />
         <Explainer />
         <DisplaySection />
+        <Footer />
       </div>
     </BrowserRouter>
   );

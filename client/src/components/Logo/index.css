@@ -1,0 +1,19 @@
+.Logo {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.Logo a:hover {
+  text-decoration: none;
+}
+
+.Logo .eff {
+  color: #d7631c;
+  font-family: 'Pacifico', cursive;
+}
+
+.Logo .that {
+  color: #128a6f;
+  font-family: 'Seymour One', sans-serif;
+  text-transform: uppercase;
+}
