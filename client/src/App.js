@@ -11,6 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
+        <Footer />
         <TopNavbar />
         <Hero />
         <Explainer />
