@@ -3,6 +3,11 @@
   max-height: 70vh;
 }
 
+.Hero .jumbotron {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-row {
   display: flex;
 }
