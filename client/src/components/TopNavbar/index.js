@@ -2,7 +2,7 @@
 
 import React, { PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { Affix } from 'react-overlays';
+import { AutoAffix } from 'react-overlays';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/index';
 import './index.css';
@@ -10,7 +10,7 @@ import './index.css';
 
 const TopNavbar = (props) => {
   return (
-    <Affix>
+    <AutoAffix>
       <Navbar inverse collapseOnSelect id="eff-that-nav">
         <Navbar.Header>
           <Navbar.Brand>
@@ -27,7 +27,7 @@ const TopNavbar = (props) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </Affix>
+    </AutoAffix>
   );
 };
 
