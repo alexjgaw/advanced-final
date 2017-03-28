@@ -1,15 +1,21 @@
 .Logo {
   font-size: 2em;
+  line-height: 52px;
   text-decoration: none;
 }
 
-.Logo a:hover {
+p > .Logo {
+  font-size: 1.5em;
+}
+
+.Logo a:hover, .Logo a:focus {
   text-decoration: none;
 }
 
 .Logo .eff {
   color: #d7631c;
   font-family: 'Pacifico', cursive;
+  margin-right: 3px;
 }
 
 .Logo .that {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Jumbotron, Image, Grid, Row, Col } from 'react-bootstrap';
+import Logo from '../Logo/index';
 import './index.css';
 
 const Hero = () => {
@@ -12,8 +13,9 @@ const Hero = () => {
               <Image src={require('../../images/prestweet.png')} responsive />
             </Col>
             <Col md={6} className="hero-text">
-              <h2>Tired of feeling helpless in the face of bigotry, ignorance, and hate?</h2>
-              <h3>eff THAT</h3>
+              <h2><span className="fancy">f</span>eeling overwhelmed in the face of
+              institutional bigotry, ignorance, and inequality?</h2>
+              <h3><Logo /></h3>
             </Col>
           </Row>
         </Grid>

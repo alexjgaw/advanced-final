@@ -1,10 +1,17 @@
 .App {
+  background-color: #e0ebe8;
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+
+.fancy {
+  color: #d7631c;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
 }
 
 .App-header {
