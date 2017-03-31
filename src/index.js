@@ -1,5 +1,6 @@
 // dotenv allows us to declare environment variables in a .env file, \
 // find out more here https://github.com/motdotla/dotenv
+/* eslint no-console: 0 */
 require("dotenv").config();
 import express from 'express';
 import bodyParser from 'body-parser';
