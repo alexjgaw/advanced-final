@@ -1,8 +1,10 @@
 import { Router } from 'express';
-import OrganizationContoller from '../controllers/OrganizationContoller';
+import OrganizationController from '../controllers/OrganizationController';
 
 const router = Router();
 
-router.get('/organizations', OrganizationContoller.list);
+router.get('/organizations', OrganizationController.list);
+
+router.post('/organizations', OrganizationController.create);
 
 export default router;

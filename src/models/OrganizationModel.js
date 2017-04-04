@@ -1,24 +1,36 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
-const keywordSchema = new Schema({
-  type: String,
-  lowercase: true,
-  trim: true,
-  minlength: 2,
-  maxlength: 100
-});
-
 const organizationSchema = new Schema({
-  id: {
+  name: {
     type: String,
-    unique: true,
     required: true,
-    minlength: 10,
-    maxlength: 10
+    minlength: 1,
+    maxlength: 256
   },
 
-  keywords: [keywordSchema]
+  description: {
+    type: String,
+    required: true,
+    minlength: 1,
+    maxlength: 512
+  },
+
+  imgUrl: {
+    type: String,
+    required: true,
+    minlength: 16,
+    maxlength: 2083
+  },
+
+  url: {
+    type: String,
+    required: true,
+    minlength: 16,
+    maxlength: 2083
+  },
+
+  keywords: [String]
 });
 
 export default mongoose.model('Organization', organizationSchema);

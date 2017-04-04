@@ -1,8 +1,8 @@
 import OrganizationModel from '../models/OrganizationModel';
 
-const OrganizationContoller = {};
+const OrganizationController = {};
 
-OrganizationContoller.list = (request, response, next) => {
+OrganizationController.list = (request, response, next) => {
   OrganizationModel.find({}).exec()
     .then(organizations => {
       return response.json(organizations);
@@ -12,4 +12,23 @@ OrganizationContoller.list = (request, response, next) => {
     });
 };
 
-export default OrganizationContoller;
+OrganizationController.create = (request, response, next) => {
+  const newOrganization = new OrganizationModel({
+    name: request.body.name,
+    description: request.body.description,
+    imgUrl: request.body.imgUrl,
+    url: request.body.url,
+    keywords: request.body.keywords
+  });
+
+  // save the new organization
+  newOrganization.save()
+    .then(organization => {
+      return response.json(organization);
+    })
+    .catch(error => {
+      next(error);
+    });
+};
+
+export default OrganizationController;
