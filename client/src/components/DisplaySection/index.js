@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import EntitiesDisplay from './EntitiesDisplay/index';
 // import './index.css';
 
-const DisplayWho = () => {
+const DisplaySection = (props) => {
   return (
     <div className="DisplayWho">
       <Grid>
@@ -11,6 +11,7 @@ const DisplayWho = () => {
           <Col md={6}>
             <EntitiesDisplay
               title="Organizations"
+              organizations={props.organizations}
             />
           </Col>
           <Col md={6}>
@@ -24,4 +25,8 @@ const DisplayWho = () => {
   );
 };
 
-export default DisplayWho;
+export default DisplaySection;
+
+DisplaySection.propTypes = {
+  organizations: PropTypes.array.isRequired
+};

@@ -4,7 +4,7 @@ import './App.css';
 import TopNavbar from './components/TopNavbar/index';
 import Hero from './components/Hero/index';
 import Explainer from './components/Explainer/index';
-import DisplaySection from './components/DisplaySection/index';
+import DisplaySectionContainer from './containers/DisplaySectionContainer/index';
 import Footer from './components/Footer/index';
 
 const App = () => {
@@ -14,10 +14,7 @@ const App = () => {
         <Hero />
         <TopNavbar />
         <Explainer />
-        <DisplaySection />
-        <DisplaySection />
-        <DisplaySection />
-        <DisplaySection />
+        <DisplaySectionContainer />
         <Footer />
       </div>
     </BrowserRouter>
