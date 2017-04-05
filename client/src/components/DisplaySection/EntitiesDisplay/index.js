@@ -5,18 +5,17 @@ const EntitiesDisplay = (props) => {
     <div className="EntitiesDisplay">
       <h1>{props.title}</h1>
       <ul>
-        <li>Entity 1</li>
-        <li>Entity 2</li>
-        <li>Entity 3</li>
-        <li>Entity 4</li>
-        <li>Entity 5</li>
+        {props.entities ?
+          <li>Entities found</li> :
+          <li>Entities not found</li>}
       </ul>
     </div>
   );
 };
 
 EntitiesDisplay.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  entities: PropTypes.array
 };
 
 export default EntitiesDisplay;

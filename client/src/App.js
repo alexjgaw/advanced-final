@@ -4,7 +4,7 @@ import './App.css';
 import TopNavbar from './components/TopNavbar/index';
 import Hero from './components/Hero/index';
 import Explainer from './components/Explainer/index';
-import DisplaySectionContainer from './containers/DisplaySectionContainer/index';
+import DisplaySectionContainer from './containers/DisplaySectionContainer';
 import Footer from './components/Footer/index';
 
 const App = () => {

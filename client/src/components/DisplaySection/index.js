@@ -11,7 +11,7 @@ const DisplaySection = (props) => {
           <Col md={6}>
             <EntitiesDisplay
               title="Organizations"
-              organizations={props.organizations}
+              entities={props.organizations}
             />
           </Col>
           <Col md={6}>
