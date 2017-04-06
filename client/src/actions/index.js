@@ -16,8 +16,8 @@ export function organizationListLoad() {
       .then(response => {
         dispatch(organizationListLoadSuccess(response.data));
       })
-      .catch(() => {
-        dispatch(organizationListLoadError('Something went wrong!'));
+      .catch((error) => {
+        dispatch(organizationListLoadError(`Something went wrong! ${error}`));
       });
   };
 }

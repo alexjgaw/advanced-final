@@ -1,21 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import MainPage from './components/MainPage/index';
 import './App.css';
-import TopNavbar from './components/TopNavbar/index';
-import Hero from './components/Hero/index';
-import Explainer from './components/Explainer/index';
-import DisplaySectionContainer from './containers/DisplaySectionContainer';
-import Footer from './components/Footer/index';
+
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <Hero />
-        <TopNavbar />
-        <Explainer />
-        <DisplaySectionContainer />
-        <Footer />
+        <MainPage />
       </div>
     </BrowserRouter>
   );

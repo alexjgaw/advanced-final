@@ -11,7 +11,7 @@ import {
 function organizations(state = [], action) {
   switch (action.type) {
     case ORGANIZATION_LIST_LOAD_SUCCESS:
-      return action.contacts;
+      return action.organizations;
     default:
       return state;
   }

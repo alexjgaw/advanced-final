@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Logo from '../Logo/index';
+import Logo from '../../Logo/index';
 import './index.css';
 
 const Explainer = () => {
