@@ -4,10 +4,6 @@ import EntitiesDisplay from './EntitiesDisplay/index';
 // import './index.css';
 
 class DisplaySection extends Component {
-  componentDidMount() {
-    this.props.onOrganizationsLoad();
-  }
-
   render() {
     return (
       <div className="DisplayWho">

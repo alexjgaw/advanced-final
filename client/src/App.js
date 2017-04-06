@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import MainPage from './components/MainPage/index';
+import MainPageContainer from './containers/MainPageContainer';
 import './App.css';
 
 
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <MainPage />
+        <MainPageContainer />
       </div>
     </BrowserRouter>
   );

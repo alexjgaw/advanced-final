@@ -1,24 +1,13 @@
 import { connect } from 'react-redux';
 import DisplaySection from '../components/DisplaySection/index';
-import {
-  organizationListLoad,
-} from '../actions/index';
+
 
 const mapStateToProps = (state) => {
   return {
-    organizations: state.organizations
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onOrganizationsLoad: () => {
-      dispatch(organizationListLoad());
-    }
+    organizations: state.mainPage.organizations
   };
 };
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(DisplaySection);
