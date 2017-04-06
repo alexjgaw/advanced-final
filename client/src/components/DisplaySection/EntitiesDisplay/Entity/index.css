@@ -1,0 +1,13 @@
+.Entity {
+  border: 8px solid #128a6f;
+  border-radius: 50%;
+  box-shadow: -3px 4px 1px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px
+}
+
+.Entity img {
+  background-color: #fff;
+  height: 150px;
+}
