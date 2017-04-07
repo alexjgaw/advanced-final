@@ -2,6 +2,7 @@
   background-color: #4ab19a;
   background-image: none;
   border: none;
+  height: 54px;
   z-index: 2;
 }
 
@@ -17,4 +18,17 @@
 
 #eff-that-nav a {
   padding: 15px 30px;
+}
+
+.affixed {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.affixed + div::before {
+  content: '';
+  box-sizing: content-box;
+  display: block;
+  height: 54px;
 }

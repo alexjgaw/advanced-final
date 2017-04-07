@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-import { AutoAffix } from 'react-overlays';
+import { Affix } from 'react-overlays';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/index';
 import './index.css';
@@ -8,7 +8,7 @@ import './index.css';
 
 const TopNavbar = (props) => {
   return (
-    <AutoAffix>
+    <Affix affixClassName="affixed" offsetTop={props.heroHeight}>
       <Navbar collapseOnSelect id="eff-that-nav">
         <Navbar.Header>
           <Navbar.Brand>
@@ -28,13 +28,12 @@ const TopNavbar = (props) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </AutoAffix>
+    </Affix>
   );
 };
 
 TopNavbar.propTypes = {
-  onSignOut: PropTypes.func.isRequired,
-  showNavItems: PropTypes.bool.isRequired
+  heroHeight: PropTypes.number
 };
 
 export default TopNavbar;

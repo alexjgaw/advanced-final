@@ -5,6 +5,14 @@ import axios from 'axios';
 export const ORGANIZATION_LIST_LOAD = 'ORGANIZATION_LIST_LOAD';
 export const ORGANIZATION_LIST_LOAD_SUCCESS = 'ORGANIZATION_LIST_LOAD_SUCCESS';
 export const ORGANIZATION_LIST_LOAD_ERROR = 'ORGANIZATION_LIST_LOAD_ERROR';
+export const GET_HERO_HEIGHT = 'GET_HERO_HEIGHT';
+
+export function getHeroHeight(height) {
+  return {
+    type: GET_HERO_HEIGHT,
+    height
+  };
+}
 
 export function organizationListLoad() {
   return (dispatch) => {

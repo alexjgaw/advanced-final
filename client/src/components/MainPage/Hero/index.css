@@ -1,9 +1,9 @@
-.App .Hero .img-responsive {
+.App #Hero .img-responsive {
   margin: auto;
-  max-height: 60vh;
+  height: 60vh;
 }
 
-.Hero .jumbotron {
+#Hero .jumbotron {
   background-color: #a9e7d9;
   margin: 0;
   padding: 0;
