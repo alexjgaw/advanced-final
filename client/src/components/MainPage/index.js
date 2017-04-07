@@ -11,7 +11,9 @@ class MainPage extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props);
     this.props.onOrganizationsLoad();
+    this.props.onPublicFiguresLoad();
   }
 
   render() {
@@ -30,5 +32,6 @@ class MainPage extends Component {
 export default MainPage;
 
 MainPage.propTypes = {
-  onOrganizationsLoad: PropTypes.func
+  onOrganizationsLoad: PropTypes.func,
+  onPublicFiguresLoad: PropTypes.func
 };

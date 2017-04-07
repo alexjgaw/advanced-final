@@ -17,7 +17,8 @@ class DisplaySection extends Component {
             </Col>
             <Col md={6}>
               <EntitiesDisplay
-                title="Politicians"
+                title="Public Figures"
+                entities={this.props.publicFigures}
               />
             </Col>
           </Row>
@@ -31,5 +32,5 @@ export default DisplaySection;
 
 DisplaySection.propTypes = {
   organizations: PropTypes.array.isRequired,
-  onOrganizationsLoad: PropTypes.func
+  publicFigures: PropTypes.array.isRequired
 };

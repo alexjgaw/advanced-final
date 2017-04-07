@@ -4,7 +4,8 @@ import DisplaySection from '../components/DisplaySection/index';
 
 const mapStateToProps = (state) => {
   return {
-    organizations: state.mainPage.organizations
+    organizations: state.mainPage.organizations,
+    publicFigures: state.mainPage.publicFigures
   };
 };
 
