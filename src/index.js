@@ -7,6 +7,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import OrganizationRouter from './routes/OrganizationRouter';
+import PublicFigureRouter from './routes/PublicFigureRouter';
 // import passport from 'passport';
 
 mongoose.Promise = global.Promise;
@@ -22,6 +23,8 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(OrganizationRouter);
+
+app.use(PublicFigureRouter)
 
 // Take care of CORS issues
 app.use((request, response, next) => {
