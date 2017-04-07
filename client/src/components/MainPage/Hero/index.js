@@ -10,6 +10,7 @@ class Hero extends Component {
 
   componentDidMount() {
     const height = document.getElementById('Hero').clientHeight;
+    console.log(height);
     this.props.onGetHeroHeight(height);
   }
 
