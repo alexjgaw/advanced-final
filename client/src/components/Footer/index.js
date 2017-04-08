@@ -1,13 +1,13 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-// import './index.css';
+import './index.css';
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div id="Footer">
       <Grid>
         <Row>
-          <Col md={4}>
+          <Col md={4} className="footer-section">
             <h3>eff THAT</h3>
             <ul>
               <li>Sign Up</li>
@@ -16,14 +16,14 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="footer-section">
             <h3>Developers</h3>
             <ul>
               <li>Team</li>
               <li>Contribute</li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="footer-section">
             <h3>Connect</h3>
             <ul>
               <li>GitHub</li>

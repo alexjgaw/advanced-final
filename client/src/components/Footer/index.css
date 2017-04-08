@@ -1,0 +1,24 @@
+#Footer {
+  background-color: #54caaf;
+}
+
+#Footer .row:first-child {
+  display: flex;
+  margin-top: 15px;
+}
+
+#Footer h3 {
+  background-color: #128a6f;
+  color: #e0ebe8;
+}
+
+#Footer ul {
+  list-style-type: none;
+  text-align: left;x
+  padding-left: 0;
+}
+
+#Footer .footer-section:not(:last-child) {
+  border-right: 1px solid #128a6f;
+  flex: 1;
+}

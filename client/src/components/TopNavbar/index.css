@@ -1,5 +1,5 @@
 #eff-that-nav {
-  background-color: #4ab19a;
+  background-color: #54caaf;
   background-image: none;
   border: none;
   height: 54px;
@@ -31,4 +31,8 @@
   box-sizing: content-box;
   display: block;
   height: 54px;
+}
+
+#eff-that-nav .in, #eff-that-nav .collapsing {
+  background-color: #4ab19a;
 }
