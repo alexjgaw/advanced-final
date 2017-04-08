@@ -13,6 +13,7 @@ class DisplaySection extends Component {
               <EntitiesDisplay
                 title="Organizations"
                 entities={this.props.organizations}
+                org
               />
             </Col>
             <Col md={6}>

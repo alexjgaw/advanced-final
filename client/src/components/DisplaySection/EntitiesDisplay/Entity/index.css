@@ -11,3 +11,15 @@
   background-color: #fff;
   height: 150px;
 }
+
+#publicFigure-popover .popover-title {
+  background-color: #a9e7d9;
+}
+
+#publicFigure-popover .popover-content {
+  background-color: #e0ebe8;
+}
+
+#organization-popover .popover-content {
+  display: hidden;
+}

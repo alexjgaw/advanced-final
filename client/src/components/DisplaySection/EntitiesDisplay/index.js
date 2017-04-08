@@ -14,6 +14,7 @@ const EntitiesDisplay = (props) => {
               <Entity
                 entity={entity}
                 key={entity._id}
+                org={props.org}
               />
             );
           })
@@ -25,7 +26,8 @@ const EntitiesDisplay = (props) => {
 
 EntitiesDisplay.propTypes = {
   title: PropTypes.string.isRequired,
-  entities: PropTypes.array
+  entities: PropTypes.array.isRequired,
+  org: PropTypes.bool
 };
 
 export default EntitiesDisplay;
