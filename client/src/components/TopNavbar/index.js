@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { Affix } from 'react-overlays';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/index';
@@ -18,13 +18,13 @@ const TopNavbar = (props) => {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem>Sign In</NavItem>
+            <li role="presentation"><Link to="/sign-in">Sign In</Link></li>
           </Nav>
           <Nav pullRight>
-            <NavItem>Contact</NavItem>
+            <li role="presentation"><Link to="/contact">Contact</Link></li>
           </Nav>
           <Nav pullRight>
-            <NavItem>About</NavItem>
+            <li role="presentation"><Link to="/about">About</Link></li>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

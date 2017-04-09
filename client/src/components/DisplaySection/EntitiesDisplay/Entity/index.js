@@ -19,7 +19,7 @@ const Entity = (props) => {
         trigger={['hover', 'focus']}
         placement="top"
         overlay={props.org ? organizationPopover : publicFigurePopover}>
-        <img src={props.entity.imgUrl} />
+        <img src={props.entity.imgUrl} alt={props.entity.name} />
       </OverlayTrigger>
     </li>
   );

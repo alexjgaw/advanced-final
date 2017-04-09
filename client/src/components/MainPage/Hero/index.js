@@ -4,13 +4,9 @@ import Logo from '../../Logo/index';
 import './index.css';
 
 class Hero extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     const height = document.getElementById('Hero').clientHeight;
-    console.log(height);
     this.props.onGetHeroHeight(height);
   }
 

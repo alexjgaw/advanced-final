@@ -6,12 +6,8 @@ import DisplaySectionContainer from '../../containers/DisplaySectionContainer';
 import Footer from '../Footer/index';
 
 class MainPage extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
-    console.log(this.props);
     this.props.onOrganizationsLoad();
     this.props.onPublicFiguresLoad();
   }

@@ -8,7 +8,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <MainPageContainer />
+        <Route exact path="/" component={MainPageContainer} />
+        <Route path="/sign-in" component={() => (<h1>hi</h1>)} />
       </div>
     </BrowserRouter>
   );
