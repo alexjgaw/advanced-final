@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Hero from '../components/MainPage/Hero/index';
+import Hero from '../components/MainTemplate/Hero/index';
 import {
   getHeroHeight
 } from '../actions/index';

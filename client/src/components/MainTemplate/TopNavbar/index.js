@@ -2,9 +2,22 @@ import React, { PropTypes } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Affix } from 'react-overlays';
 import { Link } from 'react-router-dom';
-import Logo from '../Logo/index';
+import Logo from '../../Logo/index';
 import './index.css';
 
+const LiPass = (props) => {
+  // eslint-disable-next-line
+  const { active, activeKey, activeHref, ...rest } = props;
+  return (
+    <li role="presentation" {...rest}>
+      {props.children}
+    </li>
+  );
+};
+
+LiPass.propTypes = {
+  children: PropTypes.object
+};
 
 const TopNavbar = (props) => {
   return (
@@ -18,13 +31,13 @@ const TopNavbar = (props) => {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <li role="presentation"><Link to="/sign-in">Sign In</Link></li>
+            <LiPass><Link to="/sign-in">Sign In</Link></LiPass>
           </Nav>
           <Nav pullRight>
-            <li role="presentation"><Link to="/contact">Contact</Link></li>
+            <LiPass><Link to="/contact">Contact</Link></LiPass>
           </Nav>
           <Nav pullRight>
-            <li role="presentation"><Link to="/about">About</Link></li>
+            <LiPass><Link to="/about">About</Link></LiPass>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

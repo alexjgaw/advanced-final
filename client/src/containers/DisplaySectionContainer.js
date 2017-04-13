@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import DisplaySection from '../components/DisplaySection/index';
+import DisplaySection from '../components/MainPage/DisplaySection/index';
 
 
 const mapStateToProps = (state) => {
