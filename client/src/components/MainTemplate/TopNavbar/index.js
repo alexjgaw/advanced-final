@@ -25,7 +25,7 @@ const TopNavbar = (props) => {
       <Navbar collapseOnSelect id="eff-that-nav">
         <Navbar.Header>
           <Navbar.Brand>
-            <Logo />
+            <Logo link />
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
