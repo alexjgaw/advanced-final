@@ -5,3 +5,9 @@ This is the repo for effTHAT, a platform that manages automatic donations trigge
 It's very much a work in progress, and since there's only one person on the dev team it'll probably stay that way for some time.
 
 There's no live version to view yet since I'm still working on the front end, but feel free to clone this repo to take a peek. You'll need MongoDB and Node. I'll post better instructions when the project is more mature.
+
+# Screenshots
+
+Until the project has progressed enough to warrant deployment, here are some screenshots for your viewing pleasure.
+
+![Top of main page](/../screenshots/screenshots/eff-that-1.png?raw=true "Top of main page")
