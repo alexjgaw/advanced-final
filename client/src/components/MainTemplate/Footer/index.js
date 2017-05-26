@@ -8,7 +8,7 @@ const Footer = () => {
       <Grid>
         <Row>
           <Col md={4} className="footer-section">
-            <h3>eff THAT</h3>
+            <h3>fund THAT</h3>
             <ul>
               <li>Sign Up</li>
               <li>Sign In</li>

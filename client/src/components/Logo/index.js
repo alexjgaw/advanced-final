@@ -4,13 +4,13 @@ import './index.css';
 
 const linkElement = <span className="Logo">
   <Link to="/">
-    <span className="eff">eff</span>
+    <span className="eff">fund</span>
     <span className="that">that</span>
   </Link>
 </span>;
 
 const noLinkElement = <span className="Logo">
-  <span className="eff">eff</span>
+  <span className="eff">fund</span>
   <span className="that">that</span>
 </span>;
 
