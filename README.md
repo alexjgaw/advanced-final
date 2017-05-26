@@ -10,8 +10,6 @@ There's no live version to view yet since I'm still working on the front end, bu
 
 Until the project has progressed enough to warrant deployment, here are some screenshots for your viewing pleasure. Note that the project name in the screenshots is outdated.
 
-![Top of main page](/../screenshots/screenshots/eff-that-1.png?raw=true "Top of main page")
+![Top of main page](/../screenshots/screenshots/fund-that-top.png?raw=true "Top of main page")
 
-![Middle of main page](/../screenshots/screenshots/eff-that-2.png?raw=true "Middle of main page")
-
-![Bottom of main page](/../screenshots/screenshots/eff-that-3.png?raw=true "Bottom of main page")
+![Bottom of main page](/../screenshots/screenshots/fund-that-bottom.png?raw=true "Bottom of main page")
