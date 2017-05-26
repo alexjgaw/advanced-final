@@ -12,7 +12,7 @@ import PublicFigureRouter from './routes/PublicFigureRouter';
 
 mongoose.Promise = global.Promise;
 mongoose
-  .connect('mongodb://localhost/eff-that')
+  .connect('mongodb://localhost/fund-that')
   .then(() => console.log('[mongoose] Connected to MongoDB'))
   .catch(() => console.log('[mongoose] Error connecting to MongoDB'));
 

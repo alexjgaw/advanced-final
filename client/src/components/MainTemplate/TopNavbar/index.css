@@ -1,4 +1,4 @@
-#eff-that-nav {
+#fund-that-nav {
   background-color: #54caaf;
   background-image: none;
   border: none;
@@ -6,17 +6,17 @@
   z-index: 2;
 }
 
-#eff-that-nav li {
+#fund-that-nav li {
   background-color: #a9e7d9;
   font-size: 1.3em;
   margin: 2px 1px;
 }
 
-#eff-that-nav li:hover {
+#fund-that-nav li:hover {
   background-color: #128a6f;
 }
 
-#eff-that-nav a {
+#fund-that-nav a {
   padding: 15px 30px !important;
 }
 
@@ -33,6 +33,6 @@
   height: 54px;
 }
 
-#eff-that-nav .in, #eff-that-nav .collapsing {
+#fund-that-nav .in, #fund-that-nav .collapsing {
   background-color: #4ab19a;
 }

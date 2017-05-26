@@ -22,7 +22,7 @@ LiPass.propTypes = {
 const TopNavbar = (props) => {
   return (
     <Affix affixClassName="affixed" offsetTop={props.heroHeight}>
-      <Navbar collapseOnSelect id="eff-that-nav">
+      <Navbar collapseOnSelect id="fund-that-nav">
         <Navbar.Header>
           <Navbar.Brand>
             <Logo link />
